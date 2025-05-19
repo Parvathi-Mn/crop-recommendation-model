@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Recommend Crop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <img src="{{ url_for('static', filename='images/farm-banner.jpg') }}" alt="Farm Banner">
+        <div class="banner-overlay">
+            <h1>Welcome to Parvathi Agrotech</h1>
+            <p>AI-powered crop recommendations for better yields</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="content-container">
+        <h2>Welcome to Our Crop Recommendation Platform</h2>
+        <p>Farming is more than just planting seeds—it's about making informed decisions. 
+        Get started by entering your soil test details and receive tailored crop suggestions 
+        to boost your farm's potential.</p>
+        
+        <div class="cta-section">
+            <h3>Start Your Smart Farming Journey Today</h3>
+            <a href="/predict" class="button">Get Crop Recommendation</a>
+        </div>
+    </main>
+</body>
+</html>
